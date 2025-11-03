@@ -120,12 +120,7 @@ AUDIENCE
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
+The course is aimed at members of the OECD Directorate for Employment, Labour and Social Affairs (ELS). To register for the workshop follow the internal workshop announcement. You don't need to have any previous knowledge of the tools that will be presented at the workshop.
 {% endif %}
 
 {% comment %}
