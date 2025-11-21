@@ -406,17 +406,8 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
+  To participate in the OECD Software Carpentry workshop,
   you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
@@ -443,7 +434,9 @@ These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
 
-{% if site.carpentry == "swc" %}
+{% include install_instructions/OECD-python-git.html %}
+
+<!-- {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/setup.html %}
@@ -453,4 +446,4 @@ during the workshop.
 Please check the "Setup" page of
 <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
 to obtain the software and data you will need to follow the lesson.
-{% endif %}
+{% endif %} -->
