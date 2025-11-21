@@ -4,11 +4,11 @@ layout: workshop      # DON'T CHANGE THIS.
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
 venue: "Organisation for Economic Co-operation and Development"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: " OECD"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+address: "OECD, BB North Dome, 46 quai Alphonse Le Gallo, 92100 Boulogne-Billancourt"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "fr"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+latitude: "48.837319"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "2.224394"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "Dec 01 - 02, 2025"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "09:00 am - 05:00 pm"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2025-12-01      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -120,13 +120,7 @@ AUDIENCE
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
-{% endif %}
+The course is aimed at members of the OECD Directorate for Employment, Labour and Social Affairs (ELS). To register for the workshop follow the internal workshop announcement. You don't need to have any previous knowledge of the tools that will be presented at the workshop.
 
 {% comment %}
 LOCATION
@@ -191,14 +185,7 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong>
-  {% if online == "false" %}
-    Participants must bring a laptop with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
-  {% else %}
-    Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
-  {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+    Participants must bring their OECD laptop. Please install the required specific software packages prior to the workshop (listed <a href="#setup">below</a>).
 </p>
 
 {% comment %}
@@ -244,8 +231,7 @@ Modify or remove the block below if you plan to record the workshop.
 <p id="recordings">
   <strong>Workshop Recordings:</strong>
   Carpentries workshops are designed to be interactive rather than lecture-based, with lessons that build upon one another.
-  To foster a positive online learning environment, we strongly recommend that participants join in real time.
-  As a result, workshop recordings are not recommended and may not be available to learners.
+  To foster a positive learning environment, the workshop will take place in-person only. The workshop will not be recorded.
 </p>
 {% comment %}
 CONTACT EMAIL ADDRESS
@@ -420,17 +406,8 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
+  To participate in the OECD Software Carpentry workshop,
   you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
@@ -457,7 +434,9 @@ These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
 
-{% if site.carpentry == "swc" %}
+{% include install_instructions/OECD-python-git.html %}
+
+<!-- {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/setup.html %}
@@ -467,4 +446,4 @@ during the workshop.
 Please check the "Setup" page of
 <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
 to obtain the software and data you will need to follow the lesson.
-{% endif %}
+{% endif %} -->

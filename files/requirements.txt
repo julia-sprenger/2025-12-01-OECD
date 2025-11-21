@@ -1,0 +1,30 @@
+# Core data analysis
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+jupyter
+
+# Statistics and econometrics
+statsmodels
+linearmodels
+patsy
+pingouin
+
+# Machine learning / data prep
+scikit-learn
+xgboost
+
+# Data manipulation & utilities
+openpyxl
+xlrd
+pyreadstat
+
+# Visualisation enhancements
+plotly
+altair
+
+# Jupyter extensions (optional)
+jupyterlab
+ipympl

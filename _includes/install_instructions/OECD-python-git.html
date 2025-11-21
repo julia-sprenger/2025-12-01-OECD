@@ -1,0 +1,144 @@
+<div id="tldr Setup">
+    <h3>TL;DR</h3>
+    <p>
+        To follow the OECD Carpentries course please install from the OECD Software Center:
+    <ul>
+        <li>Notepad++</li>
+        <li>from the <i>Data Science Toolkit</i>
+            <ul>
+                <li>git-2.5.1</li>
+                <li>vscode-1.105</li>
+                <li>Python-3.12</li>
+            </ul>
+        </li>
+    </ul>
+
+    Run the following steps:
+    <ul>
+        <li> Create a project folder and create a Python venv environment containing the dependencies from
+            <a href="requirements.txt">requirements</a>
+        </li>
+        <li>
+            Install the VSCode extensions <a
+                href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter</a> and <a
+                href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a>
+        </li>
+        <li> Check that you can login to your account at <a
+                href="https://gitlab.algobank.oecd.org/">gitlab.algobank.oecd.org</a>
+        </li>
+    </ul>
+    </p>
+</div>
+
+<h3>Detailed Setup</h3>
+
+<div id="algobank">
+    <h4>Algobank</h4>
+    <p>
+        You will need an account at <a href="https://gitlab.algobank.oecd.org/">gitlab.algobank.oecd.org</a>
+        for parts of the Git lesson. Check if you can connect to your account prior to the workshop.
+        In case your account is not activated, please let the organizers know prior to the workshop.
+        Please bring the device you are using for two factor authentication (2FA) to the workshop.
+    </p>
+</div>
+
+<div id="editor">
+    <h4>Text editor</h4>
+    <p>
+        In this course we will work with text files, so you will
+        need a text editor installed on your system. Please install
+        <b>Notepad++</b> from the OECD Software Center.
+    </p>
+</div>
+
+
+<div id="ide">
+    <h4>VSCode</h4>
+    <p>
+        For code development using an integrated development environment (IDE) provides comprehensive support.
+        In this workshop we will be using <a href="https://code.visualstudio.com/">VSCode</a>.
+        Please install <b>VSCode</b> version 1.105 or higher from the <i>Data Science Toolkit</i> in the OECD Software
+        Center.
+    </p>
+</div>
+
+<div id="git">
+    <h4>Git</h4>
+    <p>
+        Git is a version control system that lets you track who made changes
+        to what when and has options for easily updating a shared or public
+        version of your code on servers like <a href="https://github.com/">github.com</a>,
+        <a href="https://gitlab.com/">gitlab.com</a> or the OECD-hosted
+        <a href="https://gitlab.algobank.oecd.org/">gitlab.algobank.oecd.org</a>.
+
+        Please install <b>Git</b> version 3.5.1 from the <i>Data Science Toolkit</i> in the OECD Software Center.
+    </p>
+</div>
+
+<div id="python">
+    <h4>Python</h4>
+    <p>
+        <a href="https://python.org">Python</a> is a popular language for
+        research computing, and great for general-purpose programming as
+        well.
+        Please install <b>Python-3.12</b> from the <i>Data Science Toolkit</i> in the OECD Software Center.
+        To benefit from Python support also within VSCode, please install the <a
+            href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a> extension in VSCode.
+    </p>
+</div>
+
+
+<div id="jupyter">
+    <h4>Jupyter</h4>
+    <p>
+        We will teach Python using the <a href="https://jupyter.org/">Jupyter Notebook</a>,
+        a programming environment that runs in a web browser. We will use Jupyter Notebook
+        within VSCode. To activate support for Jupyter within VSCode install the <a
+            href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter</a>
+        extension.
+    </p>
+</div>
+
+<div id="env">
+    <h4>Python project setup and environment</h4>
+    <p>
+        We will work in a dedicated project workspace in this workshop. This way you will be able to work
+        on different projects using different configuration and depending on different Python dependencies without
+        interference between projects.
+        To create a project workspace
+    <ul>
+        <li>Create a folder in your local filesystem that will contain the project: `C:/SmartData/Carpentries`</li>
+        <li>Open VSCode and open the newly created folder using the `File` > `Open Folder` dialog</li>
+        <li>Add the <a href="{{ relative_root_path }}/files/requirements.txt">requirements.txt</a>
+            file to the project folder</li>
+
+        <li>Create a dedicated Python environment for this project:
+            <ul>
+                <li>Click on the search bar on the center top of the VSCode window, select `Show and Run Commands (Ctrl
+                    + Shift + P)`<br> <img src="{{ relative_root_path }}/assets/img/VSC_search_bar.png"
+                        alt="VSCode Search Bar" />
+                </li>
+                <li>In the search menu type `Python: Select Interpreter` > `+ Create Virtual Environment` > `Venv` and
+                    select the global Python installed via the Software center at
+                    `~\AppData\Local\Microsoft\WindowsApps\python3.12.exe`
+                    <br><img src="{{ relative_root_path }}/assets/img/VSC_select_global_interpreter.png"
+                        alt="VSCode Select Global Interpreter" />
+                </li>
+                <li>VSCode will recognize the `requirements.txt` file and ask you if the dependencies should be
+                    installed in the new environment. Confirm this and click `Ok`. VSCode will take a few seconds to
+                    setup the environment and install the dependencies.
+                    <br><img src="{{ relative_root_path }}/assets/img/VSC_install_requirements.png"
+                        alt="VSCode Install Requirements" />
+                </li>
+                <li>Once the installation is complete, VSCode will confirm that the new environment is now in use for
+                    the project. The created environment is stored in a newly created `.venv` folder in the project.
+                    To confirm that this environment is now selected as interpreter for the project, check the bottow
+                    right of the VSCode window:
+                    The current interpreter should be indicated as <img
+                        src="{{ relative_root_path }}/assets/img/VSC_selected_interpreter.png"
+                        alt="VSCode Selected Interpreter" /> </li>
+            </ul>
+        </li>
+    </ul>
+    </p>
+</div>
